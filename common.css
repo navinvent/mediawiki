@@ -1,0 +1,460 @@
+.header-stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between divs */
+}
+
+.ageing-wiki-header, .wiki-stats {
+    flex-basis: 45%; /* Width of each div */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Additional styling */
+.ageing-wiki-header {
+    /* Your existing styles for ageing-wiki-header */
+}
+
+.wiki-stats {
+    /* Your existing styles for wiki-stats */
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+
+
+/* Existing styles for .ageing-wiki-header and .wiki-stats */
+.ageing-wiki-header h1 {
+    color: #327ba7;
+    font-size: 24px;
+}
+
+.ageing-wiki-header p {
+    color: #36414f;
+}
+
+.wiki-stats {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    background-color: #f9f9f9;
+    /* other styles... */
+}
+
+
+/*body*/
+a,
+image a {
+    color: #327ba7;
+}
+
+a:visited,
+image a:visited,
+a:active,
+image a:active {
+    color: #327ba7;
+}
+
+a.new,
+image a.new {
+    color: #ba0000;
+}
+
+a.new:visited,
+image a.new:visited {
+    color: #ba0000;
+}
+
+div.vectorTabs li a,
+div.vectorMenu li a,
+#mw-panel .portal .body li a,
+div.vectorTabs li a:visited,
+div.vectorMenu li a:visited,
+#mw-panel .portal .body li a:visited,
+div.vectorTabs li a:active,
+div.vectorMenu li a:active,
+#mw-panel .portal .body li a:active {
+    color: #327ba7;
+}
+
+div.vectorTabs li.new a,
+div.vectorMenu li.new a,
+#mw-panel .portal .body li.new a,
+div.vectorTabs li.new a:visited,
+div.vectorMenu li.new a:visited,
+#mw-panel .portal .body li.new a:visited,
+div.vectorTabs li.new a:active,
+div.vectorMenu li.new a:active,
+#mw-panel .portal .body li.new a:active {
+    color: #ba0000;
+}
+
+.mw-body-content a.external,
+.mw-body-content a.extiw {
+    color: #3869bb;
+}
+
+.mw-body-content a.external:visited,
+.mw-body-content a.extiw:visited,
+.mw-body-content a.external:active,
+.mw-body-content a.extiw:active {
+    color: #3869bb;
+}
+
+.jsPurgeLink a.external {
+    color: #327ba7;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.mw-body {
+    color: #36414f;
+    background-color: #fbfbfb;
+}
+
+.mw-body-content {
+    font-size: 0.9em;
+    line-height: 1.75;
+}
+
+.mw-body-content p {
+    margin: 0 0 0.8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444e5a;
+    border-color: #e4eaee;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    border: none;
+}
+
+.mw-body h1,
+.mw-body-content h1,
+.mw-body-content h2,
+.mw-body-content h3,
+.mw-body-content h4,
+.mw-body-content h5,
+.mw-body-content h6 {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    margin-bottom: 0.3em;
+}
+
+body.page-Repair_Preservation_Group .mw-parser-output {
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+body.page-Repair_Preservation_Group.action-view .catlinks,
+body.page-Repair_Preservation_Group.action-view #contentSub,
+body.page-Repair_Preservation_Group.action-view #firstHeading,
+body.page-Repair_Preservation_Group.action-view #siteNotice {
+    display: none;
+}
+
+body.page-Repair_Preservation_Group .mw-parser-output {
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+body.page-Repair_Preservation_Group.action-view .catlinks,
+body.page-Repair_Preservation_Group.action-view #contentSub,
+body.page-Repair_Preservation_Group.action-view #firstHeading,
+body.page-Repair_Preservation_Group.action-view #siteNotice {
+    display: none;
+}
+
+.mainpage-header {
+    display: flex;
+    margin: 2.6em 1.75em 1.5em;
+}
+
+.mainpage-header .header-intro {
+    flex: 2;
+}
+
+.mainpage-header .header-intro h1 {
+    font-size: 1.8em;
+    border: none;
+    margin: 0 0 0.15em;
+}
+
+.mainpage-header .header-intro p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+.mainpage-header .header-stats {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1em;
+}
+
+.mainpage-header .header-stats ul {
+    list-style: none;
+}
+
+/* (mp_) For main-page styling - Inspired by MediaWiki's main page */
+.mp_row {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mp_box {
+  padding: 0 10px 10px 10px;
+  margin: 5px;
+  flex: 1;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 250px; /* Could we use media queries instead? */
+  border: 1px solid #CCC;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+}
+
+.mp_box h2 {
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0.5em 0;
+}
+
+.mp_box .content {
+  /* padding-top: 0.5em; */
+}
+
+.mp_box img .image-fullwidth {
+  height: auto;
+  width: 100%;
+}
+
+.mainpage-social {
+    border: none;
+    box-shadow: 0 0.25rem 0.35rem -0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.mainpage-social .tile-top {
+    display: flex;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+
+.mainpage-social .tile-top a {
+    flex: 1;
+    position: relative;
+    text-decoration: none;
+}
+
+.mainpage-social .tile-top a:hover .arrow {
+    transform: translateX(50%);
+}
+
+.mainpage-social .tile-bottom {
+    border: none;
+    padding: 1em 1.75em;
+}
+
+.mainpage-social .tile-bottom p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+.mainpage-social .social-icon {
+    margin-right: 0.75em;
+    width: 60px;
+    text-align: center;
+}
+
+.mainpage-social .social-header {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.15em;
+    margin: 0.5em 0 -0.15em;
+}
+
+.mainpage-social .social-tagline {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5em;
+}
+
+.mainpage-social .arrow {
+    position: absolute;
+    top: calc(50% - .5em);
+    right: 0;
+    height: 1em;
+    width: 0.7em;
+    background-size: 0.7em 1em;
+    transition: 0.3s ease-out;
+}
+
+.mainpage-social.mainpage-discord .tile-top {
+    background: #7289da;
+}
+
+.mainpage-social.mainpage-discord .tile-bottom {
+    background: #697ec4;
+}
+
+/* Reflist css
+ */
+ol.references {
+	font-size: 90%;
+	margin-bottom: 0.5em;
+}
+
+/* columns-2 and columns-3 are legacy for "2 or more" column view from when the
+ * template was implemented with column-count.
+ */
+.reflist-columns-2 {
+	column-width: 30em;
+}
+
+.reflist-columns-3 {
+	column-width: 25em;
+}
+
+/* Reset top margin for lists embedded in columns */
+.reflist-columns {
+	margin-top: 0.3em;
+}
+
+.reflist-columns ol {
+	margin-top: 0;
+}
+
+/* Avoid elements breaking between columns */
+.reflist-columns li {
+	page-break-inside: avoid; /* Removed from CSS in favor of break-inside c. 2020 */
+	break-inside: avoid-column;
+}
+
+.reflist-upper-alpha {
+	list-style-type: upper-alpha;
+}
+
+.reflist-upper-roman {
+	list-style-type: upper-roman;
+}
+
+.reflist-lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+.reflist-lower-greek {
+	list-style-type: lower-greek;
+}
+
+.reflist-lower-roman {
+	list-style-type: lower-roman;
+}
+
+/* {{pp-template}} */
+.refbegin {
+	font-size: 90%;
+	margin-bottom: 0.5em;
+}
+
+.refbegin-hanging-indents > ul {
+	margin-left: 0;
+}
+
+.refbegin-hanging-indents > ul > li {
+	margin-left: 0;
+	padding-left: 3.2em;
+	text-indent: -3.2em;
+}
+
+.refbegin-hanging-indents ul,
+.refbegin-hanging-indents ul li {
+	list-style: none;
+}
+
+@media (max-width: 720px) {
+	.refbegin-hanging-indents > ul > li {
+		padding-left: 1.6em;
+		text-indent: -1.6em;
+	}
+}
+
+/* Option for normal fontsize in {{refbegin}} */
+.refbegin-100 {
+	font-size: 100%;
+}
+
+.refbegin-columns {
+	margin-top: 0.3em;
+}
+
+/* Reset top margin for lists embedded in columns */
+.refbegin-columns ul {
+	margin-top: 0;
+}
+
+/* Avoid elements breaking between columns */
+.refbegin-columns li {
+	page-break-inside: avoid; /* Removed from CSS in favor of break-inside c. 2020 */
+	break-inside: avoid-column;
+}
+
+/*stats css*/
+
+.wiki-stats {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10 / 10%), 0 0px 0 1px rgba(10, 10, 10 / 2%);
+    background-color: #f9f9f9;
+}
+
+.wiki-stats h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.wiki-stats ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wiki-stats ul li {
+    margin-bottom: 5px;
+}
+
+.wiki-stats ul li a {
+    color: #327ba7;
+    text-decoration: none;
+}
+
+.wiki-stats ul li a:hover {
+    text-decoration: underline;
+}
+
+.wiki-stats strong {
+    font-weight: bold;
+}
